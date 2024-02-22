@@ -70,10 +70,33 @@ header nav {
     background: url(../img/bg/home.jpg) no-repeat center center fixed;
     background-size: cover;
     height: 100vh;
+
+    box-shadow: 0px 0px 25px 0px rgba(0,0,0,0.75);
 }
 
 .hero div {
     height: 100%;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.6);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
+
+.hero h1 {
+    padding-left: 3rem;
+    font-size: 5rem;
+    font-family: 'Norse', fantasy;
+}
+
+.hero p {
+    max-width: 70ch;
+
+    font-size: 1.2rem;
+    font-style: italic;
+
+    padding-left: 5rem;
+    padding-top: 0.5rem;
+}
+
