@@ -13,7 +13,12 @@
 }
 
 :root {
+    --bg-color: #000500; 
+    --text-color: #f8f9fa;
+    --focus-color: #6B7FD7;
+
     font-family: 'Roboto', sans-serif;
+    color: var(--text-color);
 }
 
 header {
@@ -23,13 +28,14 @@ header {
     display: flex;
     align-items: center;
 
-    background-color: #272343;
-    color: #FFFFFF;
+    background-color: var(--bg-color);
+
+    border-bottom: 4px solid var(--text-color);
 }
 
 header svg {
     height: 5rem;
-    fill: #FFFFFF;
+    fill: var(--text-color);
 }
 
 header h1 {
@@ -44,7 +50,14 @@ header button {
 
     font-family: inherit;
     font-size: 2.5rem;
-    color: #FFFFFF;
+    color: var(--text-color);
+}
+header button:hover {
+    color: var(--focus-color);
+}
+
+header button:active {
+    filter: brightness(85%);
 }
 
 header nav {
