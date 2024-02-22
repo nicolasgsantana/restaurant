@@ -7,3 +7,60 @@
     url('../fonts/norsebold.woff') format('woff');
 }
 
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    padding: 8px;
+    font-family: 'Norse', fantasy;
+
+    display: flex;
+    align-items: center;
+
+    background-color: #272343;
+    color: #FFFFFF;
+}
+
+header svg {
+    height: 5rem;
+    fill: #FFFFFF;
+}
+
+header h1 {
+    font-size: 4rem;
+    margin-right: auto;
+    margin-left: 8px;
+}
+
+header button {
+    background: none;
+    border: none;
+
+    font-family: inherit;
+    font-size: 2.5rem;
+    color: #FFFFFF;
+}
+
+header nav {
+    display: flex;
+    gap: 1rem;
+    padding-right: 1rem;
+}
+
+.hero {
+    background: url(../img/bg/home.jpg) no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+}
+
+.hero div {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
