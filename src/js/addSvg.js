@@ -1,5 +1,5 @@
 import { sanitize } from "dompurify";
 
-export default addSvg = (container, svgCode) => {
-    container.innerHtml = sanitize(svgCode);
+export default function (svgCode) {
+    return sanitize(svgCode);
 }
