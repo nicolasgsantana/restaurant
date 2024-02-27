@@ -146,6 +146,42 @@ header nav {
     align-items: center;
 }
 
+.about {
+    background: url(../img/bg/about.jpg) no-repeat center center fixed;
+    background-size: cover;
+    
+}
+
+.about > div {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.text{
+    color: var(--text-color);
+    width: 60ch;
+    margin: 0 auto;
+    padding: 2rem 0;
+}
+
+.about h1, .about h2 {
+    font-family: 'Norse', fantasy;
+}
+
+.about h1 {
+    font-size: 4rem;
+    padding-bottom: 1rem;
+}
+
+.about h2 {
+    font-size: 2rem;
+    padding: 1rem 0;
+}
+
+.about p {
+    font-size: 1.2rem;
+    padding: 0.5rem 0;
+}
+
 footer {
     padding: 1rem;
     font-size: 1.2rem;
@@ -153,6 +189,7 @@ footer {
 
     display: flex;
     justify-content: center;
+    border-top: 4px solid var(--text-color);
 }
 
 footer a {
