@@ -93,7 +93,6 @@ const createMenu = () => {
 
         const img = document.createElement("img");
         img.src = drinkInfo[i].imgSrc;
-        div.appendChild(img);
 
         const subDiv = document.createElement("div");
 
@@ -105,7 +104,14 @@ const createMenu = () => {
         desc.textContent = drinkInfo[i].description;
         subDiv.appendChild(desc);
 
-        div.appendChild(subDiv);
+        if (i % 2 === 0) {
+            div.appendChild(img);
+            div.appendChild(subDiv);
+        }
+        else {
+            div.appendChild(subDiv);
+            div.appendChild(img);
+        }
 
         menuDiv.appendChild(div);
     }
@@ -122,7 +128,6 @@ const createMenu = () => {
 
         const img = document.createElement("img");
         img.src = specialDrinkInfo[i].imgSrc;
-        div.appendChild(img);
 
         const subDiv = document.createElement("div");
 
@@ -134,7 +139,14 @@ const createMenu = () => {
         desc.textContent = specialDrinkInfo[i].description;
         subDiv.appendChild(desc);
 
-        div.appendChild(subDiv);
+        if (i % 2 === 0) {
+            div.appendChild(img);
+            div.appendChild(subDiv);
+        }
+        else {
+            div.appendChild(subDiv);
+            div.appendChild(img);
+        }
 
         menuDiv.appendChild(div);
     }
