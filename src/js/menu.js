@@ -88,7 +88,6 @@ const createMenu = () => {
     mainHeader1.textContent = "Drinks";
     menuDiv.appendChild(mainHeader1);
 
-    // Create drink div
     for (let i = 0; i < drinkInfo.length; i++) {
         const div = document.createElement("div");
 
@@ -96,13 +95,17 @@ const createMenu = () => {
         img.src = drinkInfo[i].imgSrc;
         div.appendChild(img);
 
+        const subDiv = document.createElement("div");
+
         const title = document.createElement("h2");
         title.textContent = drinkInfo[i].title;
-        div.appendChild(title);
+        subDiv.appendChild(title);
 
         const desc = document.createElement("p");
         desc.textContent = drinkInfo[i].description;
-        div.appendChild(desc);
+        subDiv.appendChild(desc);
+
+        div.appendChild(subDiv);
 
         menuDiv.appendChild(div);
     }
@@ -111,6 +114,9 @@ const createMenu = () => {
     mainHeader2.textContent = "Weekend Specials";
     menuDiv.appendChild(mainHeader2);
 
+    const div = document.createElement("div");
+    menuDiv.appendChild(div);
+
     for (let i = 0; i < specialDrinkInfo.length; i++) {
         const div = document.createElement("div");
 
@@ -118,13 +124,17 @@ const createMenu = () => {
         img.src = specialDrinkInfo[i].imgSrc;
         div.appendChild(img);
 
+        const subDiv = document.createElement("div");
+
         const title = document.createElement("h2");
         title.textContent = specialDrinkInfo[i].title;
-        div.appendChild(title);
+        subDiv.appendChild(title);
 
         const desc = document.createElement("p");
         desc.textContent = specialDrinkInfo[i].description;
-        div.appendChild(desc);
+        subDiv.appendChild(desc);
+
+        div.appendChild(subDiv);
 
         menuDiv.appendChild(div);
     }
