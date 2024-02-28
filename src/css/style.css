@@ -102,18 +102,17 @@ header nav {
 }
 
 .info {
-    height: 90vh;
     background-color: var(--text-color);
     color: var(--bg-color);
 
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: repeat(3, min-content);
     justify-items: center;
     align-items: center;
-    gap: 3rem;
+    gap: 4rem;
 
-    padding: 3rem 0;
+    padding: 2rem;
 }
 
 .info h1 {
